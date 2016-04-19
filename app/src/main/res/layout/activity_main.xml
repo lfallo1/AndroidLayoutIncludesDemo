@@ -11,7 +11,8 @@
     android:orientation="vertical">
 
     <!-- inflater essentially pastes contents of layout file. important because it allows
-     us to reference the Views in the included file within the activity -->
+     us to reference the Views in the included file within the activity
+     -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,17 +20,21 @@
         <include layout="@layout/include_text_panel" />
     </LinearLayout>
 
+    <!-- can add layout attributes that will propogate into original layout / partial file
+ Note that it propogates into the layout, not the specific elements
+-->
     <include layout="@layout/include_button_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:id="@+id/activity_main_buttonPanelBottom"/>
+        android:id="@+id/activity_main_buttonPanelBottom" />
 
     <!-- example of multiple includes of same layout file -->
     <include layout="@layout/include_button_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/activity_main_buttonPanelBottom"
-        android:layout_marginBottom="14dp"/>
+        android:layout_marginBottom="14dp"
+        android:id="@+id/activity_main_buttonPanelTop" />
 
 </RelativeLayout>
