@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- By using merge, when this layout is included in another layout the views will
+    be directly added.  That is, they will not be nested in their own Layout -->
+
+<!--<LinearLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="16dp"-->
+    <!--android:background="#1976D2">-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is some text from panel"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/include_text_panel_textView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtitle"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:id="@+id/include_text_panel_textViewSubtitle"/>
+
+    </merge>
+
+<!--</LinearLayout>-->
