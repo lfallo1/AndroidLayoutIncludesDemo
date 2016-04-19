@@ -22,6 +22,11 @@
 
     <!-- can add layout attributes that will propogate into original layout / partial file
  Note that it propogates into the layout, not the specific elements
+
+ We will have two of the same ID's here (buttons). You can view this through the adb monitor.
+ The LinearLayout ID's - since we are setting them here - are different.  see MainActivity for
+ how we can use this to reference the correct button.  If we only get button by its ID, android
+ will only take the last reference.
 -->
     <include layout="@layout/include_button_panel"
         android:layout_width="match_parent"
